@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nile Treasures</title>
+  <link rel="stylesheet" href="store.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="store">
+  <header>
+    <div class="container top-nav">
+      <a href="#" class="logo"><img src="img/ytmf.webp" alt=""></a>
+      <div class="links">
+        <ul>
+          <li class="active"><a href="">home</a></li>
+          <li><a href="">all products</a></li>
+          <li><a href="">about us</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </div>
+      <div class="cart_header">
+          <div onclick="open_cart()"  class="icon_cart">                       
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count_item">2</span>
+          </div>
+          <div class="total_price">
+            <p class="price_cart_head">0.0$</p>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="search...">
+              <a href="">
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </header>
+  <div class="cart">
+    <div class="top_cart">
+      <h3>My Cart <span>(2 Item In Cart)</span></h3>
+      <span onclick="close_cart()" class="close_cart"><i class="fa-solid fa-circle-xmark"></i></span>
+    </div>
+    <div class="items_in_cart">
+        <div class="item_cart">
+          <img src="img/product/product-1.jpg" alt="">
+          <div class="content">
+            <h4>Iphone 7 Plus</h4>
+            <p class="price_cart">140$</p>
+          </div>
+          <button class="delete_item"><i class="fa-solid fa-circle-minus"></i></button>
+        </div>
+        <div class="item_cart">
+          <img src="img/product/product-2.jpg" alt="">
+          <div class="content">
+            <h4> Samsung Grand Prime</h4>
+            <p class="price_cart">180$</p>
+          </div>
+          <button class="delete_item"><i class="fa-solid fa-circle-minus"></i></button>
+        </div>
+    </div>
+    
+  
+    <div class="bottom_cart">
+      <div class="total">
+        <p>Cart Subtotal</p>
+        <p class="price_cart_total">0$</p>
+      </div>
+
+      <div class="button_cart">
+          <a href="#" class="btn_cart">Proceed To Checkout</a>
+          <button class="btn_cart trans_bg">shop more</button>
+      </div>
+    </div>
+  </div>
+  <section class="slider">
+    <div class="container">
+      <div class="side_bar">
+        <h2><i class="fa-solid fa-bars"></i>Shop By Derparment</h2>
+        <a href="#">All Categoris</a>
+        <a href="#">Best Seller Products</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Top 10 Offers</a>
+        <a href="#">Accessories</a>
+        <a href="#">KeyChains </a>
+        <a href="#">Statues</a>
+      </div>
+      <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href=""><img src="img/slider-01.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="img/slider-02.jpg" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href=""><img src="img/slider-03.jpg" alt=""></a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <div class="feature_item">
+        <img src="img/features1.png" alt="">
+        <div class="text">
+          <h4>Free Shipping</h4>
+          <p>free shipping on all orders</p>
+        </div>
+      </div>
+      <div class="feature_item">
+        <img src="img/features2.png" alt="">
+        <div class="text">
+          <h4>Money Guarantee</h4>
+          <p>30 Day Money Back Guarantee</p>
+        </div>
+      </div>
+      <div class="feature_item">
+        <img src="img/features3.png" alt="">
+        <div class="text">
+          <h4>Online Support 24/7</h4>
+          <p>Technical Support Stand By</p>
+        </div>
+      </div>
+      <div class="feature_item">
+        <img src="img/features4.png" alt="">
+        <div class="text">
+          <h4>Secure Payment</h4>
+          <p>All Payment Method are accepted</p>
+        </div>
+      </div>
+      <div class="feature_item">
+        <img src="img/features5.png" alt="">
+        <div class="text">
+          <h4>Member Discount</h4>
+          <p>UP To 40% Discount</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="slide slide_sale">
+    <div class="container">
+      <div class="sale_sec mySwiper">
+        <div class="top_slide">
+          <h2>on sale <span>product</span></h2>
+        </div>
+          <div class="products swiper-wrapper">
+            <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%20</span>
+              <div class="img_product">
+                <img src="img/product/product-1.jpg" alt="">
+                <img class="img_hover" src="img/product/product1.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">IPHONE7</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$180</span></p>
+                <p class="old_price">$200</p>
+              </div>
+              
+            </div>
+            <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%50</span>
+              <div class="img_product">
+                <img src="img/product/product-7.jpg" alt="">
+                <img class="img_hover" src="img/product/product7.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">OPPO A7</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$200</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div> <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%70</span>
+              <div class="img_product">
+                <img src="img/product/product-2.jpg" alt="">
+                <img class="img_hover" src="img/product/product2.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">SAMSUNG GALAXY</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$120</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div> <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%10</span>
+              <div class="img_product">
+                <img src="img/product/product-3.jpg" alt="">
+                <img class="img_hover" src="img/product/product3.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">PC SCREEN</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$360</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div> <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%2</span>
+              <div class="img_product">
+                <img src="img/product/product-4.jpg" alt="">
+                <img class="img_hover" src="img/product/product4.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">HEADPHONE WIRLESS</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$370</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div> <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%90</span>
+              <div class="img_product">
+                <img src="img/product/product-5.jpg" alt="">
+                <img class="img_hover" src="img/product/product5.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">HEADPHONE WIRE</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$360</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div> <div class="product swiper-slide">
+              <div class="icon">
+                <span><i class="fa-solid fa-cart-plus"></i></span>
+                <span><i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-share"></i></span>
+                
+              </div>
+              <span class="sale_present">%10</span>
+              <div class="img_product">
+                <img src="img/product/product-6.jpg" alt="">
+                <img class="img_hover" src="img/product/product6.jpg" alt="">
+              </div>
+              <h3 class="name_product"><a href="*">HAWAII</a></h3>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="price">
+                <p><span>$220</span></p>
+                <p class="old_price">$400</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="swiper-button-next btn_swip"></div>
+          <div class="swiper-button-prev btn_swip"></div>
+
+
+
+          
+      </div>
+
+    </div>
+
+
+  </section>
+  <script>
+    var cart = document.querySelector('.cart');
+
+    function open_cart() {
+        cart.classList.add("active")
+    }
+    function close_cart() {
+        cart.classList.remove("active")
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>var swiper = new Swiper(".slide-swp", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullests: true,
+      clickable:true
+    },
+    autoplay:{
+      delay:2500,
+    },
+    loop:true,
+  });</script>
+  <script>var swiper = new Swiper(".sale_sec", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
+      clickable: true
+    },
+    slidesPerView: 5,
+    spaceBetween:30,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: 
+    {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    loop: true,
+  });
+  </script>
+</body>
+</html>

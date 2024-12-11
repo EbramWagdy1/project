@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nile Treasures</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.3)
+          ),
+          url("image/ground.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 450px;
+        width: 90%;
+        z-index: 1;
+      }
+
+      .text {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .button {
+        text-decoration: none;
+        padding: 12px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #fff;
+        background: #5c9ead;
+        border-radius: 25px;
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+      }
+
+      .button:hover {
+        background: #417f88;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .button:active {
+        transform: translateY(2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (max-width: 768px) {
+        .text {
+          font-size: 1.6rem;
+        }
+
+        .button {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+      }
+
+      @keyframes backgroundAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      body {
+        animation: backgroundAnimation 15s ease infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="text">Welcome to Nile Treasures</div>
+      <div class="buttons">
+        <a href="signup.html" class="button">Sign Up</a>
+        <a href="login.html" class="button">Login</a>
+      </div>
+    </div>
+  </body>
+</html>
